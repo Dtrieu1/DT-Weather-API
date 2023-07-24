@@ -1,0 +1,41 @@
+header{
+    background:lightblue;
+    text-align: center;
+    font-size: 80px;
+    padding: 15px;
+    font-weight:bold;
+}
+
+#cityColumn{
+    display: flex;
+    flex-direction: column;
+    background-color: lightsalmon;
+    max-width: 700px;
+    padding: 15px;
+    border-top-style:solid;
+    border-left-style:solid;
+    border-bottom-style:solid;
+}
+
+button{
+    height: 40px;
+    width: 300px;
+    margin: 7px 5px;
+}
+#weatherLayout{
+    display: flex;
+    flex-direction: row;
+    border-color: black;
+}
+#weatherSummary{
+    border-style:solid;
+}
+#fiveDayForecast{
+    display: flex;
+    flex-direction: row;
+    
+}
+#secondWeatherBox{
+    border-style: solid;
+    border-color:black
+}

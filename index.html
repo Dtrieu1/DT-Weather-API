@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<header>
+    Weather Forecast
+
+</header>
+
+<body>
+    <section id="weatherLayout">
+        <div id="cityColumn">
+            <h1>Search for the City you are checking!</h1>
+            <form>
+                <label for="search"> Enter City</label><br>
+                <input type="text" id="search">
+            </form>
+            <button>Chicago</button>
+            <button>Minneapolis</button>
+        </div>
+        <div id="mainColumn">
+            <div id="weatherSummary">
+                <h1 id="City">City Summary</h1>
+                Temp: <span id="temp">Output City Name</span>
+                <br>Wind: <span id="wind">Output wind speed</span>
+                <br>Humidity: <span id="humidity">Output humidity</span>
+            </div>
+            <div id="secondWeatherBox">
+                <br>5-Day Forecast
+                <div id="fiveDayForecast">
+                    <input placeholder="dayone">
+                    <input placeholder="daytwo">
+                    <input placeholder="daythree">
+                    <input placeholder="dayfour">
+                    <input placeholder="dayfive">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
