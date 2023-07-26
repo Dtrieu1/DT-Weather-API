@@ -16,13 +16,16 @@
 <body>
     <section id="weatherLayout">
         <div id="cityColumn">
+
             <h1>Search for the City you are checking!</h1>
+
             <form>
-                <label for="search"> Enter City</label><br>
+                <label> Enter City: </label><br>
                 <input type="text" id="search">
+                <input type="submit" id="submit">
             </form>
-            <button>Chicago</button>
-            <button>Minneapolis</button>
+            <button id="Chicago">Chicago</button>
+            <button id="Minneapolis">Minneapolis</button>
         </div>
         <div id="mainColumn">
             <div id="weatherSummary">
@@ -32,19 +35,21 @@
                 <br>Humidity: <span id="humidity">Output humidity</span>
             </div>
             <div id="secondWeatherBox">
-                <br>5-Day Forecast
+                <br>5-Day Forecast<br>
+                <label id=setTime></label><br>
                 <div id="fiveDayForecast">
-                    <input placeholder="dayone">
-                    <input placeholder="daytwo">
-                    <input placeholder="daythree">
-                    <input placeholder="dayfour">
-                    <input placeholder="dayfive">
+                    <input placeholder="dayone" id="dayone">
+                    <input placeholder="daytwo" id="daytwo">
+                    <input placeholder="daythree" id="daythree">
+                    <input placeholder="dayfour" id="dayfour">
+                    <input placeholder="dayfive" id="dayfive">
                 </div>
             </div>
         </div>
     </section>
-    <script src="script.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="script.js"> </script>
 </body>
 
 </html>
