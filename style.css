@@ -1,20 +1,18 @@
 header{
     background:lightblue;
     text-align: center;
-    font-size: 80px;
+    font-size: 40px;
     padding: 15px;
-    font-weight:bold;
+  
 }
 
 #cityColumn{
     display: flex;
     flex-direction: column;
-    background-color: lightsalmon;
+  
     max-width: 700px;
     padding: 15px;
-    border-top-style:solid;
-    border-left-style:solid;
-    border-bottom-style:solid;
+  
 }
 
 button{
@@ -25,10 +23,11 @@ button{
 #weatherLayout{
     display: flex;
     flex-direction: row;
-    border-color: black;
+ 
 }
 #weatherSummary{
-    border-style:solid;
+    border-style:inset;
+    width: 780px;
 }
 #fiveDayForecast{
     display: flex;
@@ -36,7 +35,16 @@ button{
     
 }
 #secondWeatherBox{
-    border-style: solid;
+ 
     border-color:black
 }
+.cardsWeather{
+    height: 200px;
+    width: 150px;
+    border-style: inset;
+}
 
+img{
+    height: 100px;
+    width: 100px;
+}
