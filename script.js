@@ -63,11 +63,12 @@ function pullWeatherData(cityName) {
             var newCard = document.createElement("div");
             newCard.className = "cardsWeather";
             newCard.innerHTML = `
-     <div>${"Temp:" + main_temp} </div>
-     <div>${"Wind: " + wind_speed + " MPH"}</div>
-     <img src=${icon}
-     <div>${""}</div>
-     <div>${"Humidity: " + main_humidity + "%"}</div>
+          <div>${"Date: " + date}</div>
+          <div>${"Temp:" + main_temp} </div>
+          <div>${"Wind: " + wind_speed + " MPH"}</div>
+          <img src=${icon}
+          <div>${""}</div>
+          <div>${"Humidity: " + main_humidity + "%"}</div>
      `;
             $("#fiveDayForecast").append(newCard);
           }
