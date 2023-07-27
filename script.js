@@ -15,12 +15,10 @@ document.getElementById("submit").onclick = function (event) {
 
 //Updating City Summary
 function updateCitySummary(cityName) {
-  console.log("updateCitySummary: " + cityName);
   $("#City").text(cityName + " " + dayjs().format("(YYYY-MM-DD)"));
 }
 
 function pullWeatherData(cityName) {
-  console.log("pullWeatherData: " + cityName);
   var weather =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     cityName +
@@ -30,7 +28,6 @@ function pullWeatherData(cityName) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       temp.text((((data.main.temp - 273.15) * 9) / 5 + 32).toFixed(2) + " F");
       wind.text(data.wind.speed + " mph");
       humidity.text(data.main.humidity + " %");
@@ -39,9 +36,6 @@ function pullWeatherData(cityName) {
       $("#icon").attr("src", image);
       lat = data.coord.lat;
       lon = data.coord.lon;
-
-      console.log("lat" + lat);
-      console.log("lon" + lon);
 
       var forecast =
         "https://api.openweathermap.org/data/2.5/forecast?lat=" +
@@ -54,7 +48,6 @@ function pullWeatherData(cityName) {
           return response.json();
         })
         .then(function (data) {
-          console.log(data);
           var dayNumber = 1;
           for (var i = 6; i < data.list.length; i += 8) {
             var date = data.list[i].dt_txt.split(" ")[0];
