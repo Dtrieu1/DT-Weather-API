@@ -7,6 +7,7 @@ var lat = "";
 //Button dynamics when selected
 document.getElementById("submit").onclick = function (event) {
   event.preventDefault();
+  $("#fiveDayForecast").empty();
   myName = document.getElementById("search").value;
   updateCitySummary(myName);
   pullWeatherData(myName);
