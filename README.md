@@ -7,3 +7,6 @@ When you first land on that page, it will be shown as this:
 ![Alt text](image.png)
 
 Once you search the specified city, it would be displayed as this:
+![Alt text](image-1.png)
+
+Deployed URL: https://dtrieu1.github.io/DT-Weather-API/
